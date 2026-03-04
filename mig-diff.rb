@@ -5,20 +5,20 @@
 class MigDiff < Formula
   desc "Show Django migration diffs between git branches"
   homepage "https://github.com/kumitaakira453/mig-diff"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kumitaakira453/mig-diff/releases/download/v0.1.0/mig-diff_0.1.0_darwin_amd64.tar.gz"
-      sha256 "c529b87551db1438e3374581722d811bea6d1d18613de1deb727d999796188b1"
+      url "https://github.com/kumitaakira453/mig-diff/releases/download/v0.1.1/mig-diff_0.1.1_darwin_amd64.tar.gz"
+      sha256 "f5337557d05424fac1ff659647b6caf7de812fa712d13452fdf77ca571b23054"
 
       define_method(:install) do
         bin.install "mig-diff"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kumitaakira453/mig-diff/releases/download/v0.1.0/mig-diff_0.1.0_darwin_arm64.tar.gz"
-      sha256 "1a075c3c8d7305de1d3fff7d42241ec231267e98ec0a64b336e4a1e7b3167444"
+      url "https://github.com/kumitaakira453/mig-diff/releases/download/v0.1.1/mig-diff_0.1.1_darwin_arm64.tar.gz"
+      sha256 "cca495e77e743a8f7af07dfd0643f52e72c880288d58da868c6fc161059b4646"
 
       define_method(:install) do
         bin.install "mig-diff"
@@ -28,15 +28,15 @@ class MigDiff < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kumitaakira453/mig-diff/releases/download/v0.1.0/mig-diff_0.1.0_linux_amd64.tar.gz"
-      sha256 "e1342e9048a7eb6e75df08911ead728b8d1550f1881c0b258f754911e4540219"
+      url "https://github.com/kumitaakira453/mig-diff/releases/download/v0.1.1/mig-diff_0.1.1_linux_amd64.tar.gz"
+      sha256 "a9e7e8b8511976f79d63d415d35bcd4b23fac229fa244f0b8c479e03dc6fcb09"
       define_method(:install) do
         bin.install "mig-diff"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kumitaakira453/mig-diff/releases/download/v0.1.0/mig-diff_0.1.0_linux_arm64.tar.gz"
-      sha256 "1355f9767b27cb13215618db8807719fa5d1032712b940ecb56519d208312220"
+      url "https://github.com/kumitaakira453/mig-diff/releases/download/v0.1.1/mig-diff_0.1.1_linux_arm64.tar.gz"
+      sha256 "fd942a25d3ad69d4dd5c5119116ae4e2579e0ddeb0c6c36ea14c97d99dcbe671"
       define_method(:install) do
         bin.install "mig-diff"
       end
